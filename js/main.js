@@ -26,11 +26,11 @@ var replayclickable = false;
 
 //sounds
 var volume = 30;
-var soundJump = new buzz.sound("assets/sounds/sfx_wing.ogg");
-var soundScore = new buzz.sound("assets/sounds/sfx_point.ogg");
-var soundHit = new buzz.sound("assets/sounds/sfx_hit.ogg");
-var soundDie = new buzz.sound("assets/sounds/sfx_die.ogg");
-var soundSwoosh = new buzz.sound("assets/sounds/sfx_swooshing.ogg");
+var soundJump = new buzz.sound("https://cdn.statically.io/gh/AniRules/Flappy-Bird/main/assets/sounds/sfx_wing.ogg");
+var soundScore = new buzz.sound("https://cdn.statically.io/gh/AniRules/Flappy-Bird/main/assets/sounds/sfx_point.ogg");
+var soundHit = new buzz.sound("https://cdn.statically.io/gh/AniRules/Flappy-Bird/main/assets/sounds/sfx_hit.ogg");
+var soundDie = new buzz.sound("https://cdn.statically.io/gh/AniRules/Flappy-Bird/main/assets/sounds/sfx_die.ogg");
+var soundSwoosh = new buzz.sound("https://cdn.statically.io/gh/AniRules/Flappy-Bird/main/assets/sounds/sfx_swooshing.ogg");
 buzz.all().setVolume(volume);
 
 //loops
@@ -304,7 +304,7 @@ function setBigScore(erase)
 
    var digits = score.toString().split('');
    for(var i = 0; i < digits.length; i++)
-      elemscore.append("<img src='assets/font_big_" + digits[i] + ".png' alt='" + digits[i] + "'>");
+      elemscore.append("<img src='https://cdn.statically.io/gh/AniRules/Flappy-Bird/main/assets/font_big_" + digits[i] + ".png' alt='" + digits[i] + "'>");
 }
 
 function setSmallScore()
@@ -314,7 +314,7 @@ function setSmallScore()
 
    var digits = score.toString().split('');
    for(var i = 0; i < digits.length; i++)
-      elemscore.append("<img src='assets/font_small_" + digits[i] + ".png' alt='" + digits[i] + "'>");
+      elemscore.append("<img src='https://cdn.statically.io/gh/AniRules/Flappy-Bird/main/assets/font_small_" + digits[i] + ".png' alt='" + digits[i] + "'>");
 }
 
 function setHighScore()
@@ -324,7 +324,7 @@ function setHighScore()
 
    var digits = highscore.toString().split('');
    for(var i = 0; i < digits.length; i++)
-      elemscore.append("<img src='assets/font_small_" + digits[i] + ".png' alt='" + digits[i] + "'>");
+      elemscore.append("<img src='https://cdn.statically.io/gh/AniRules/Flappy-Bird/main/assets/font_small_" + digits[i] + ".png' alt='" + digits[i] + "'>");
 }
 
 function setMedal()
@@ -345,7 +345,7 @@ function setMedal()
    if(score >= 40)
       medal = "platinum";
 
-   elemmedal.append('<img src="assets/medal_' + medal +'.png" alt="' + medal +'">');
+   elemmedal.append('<img src="https://cdn.statically.io/gh/AniRules/Flappy-Bird/main/assets/medal_' + medal +'.png" alt="' + medal +'">');
 
    //signal that a medal has been won
    return true;
